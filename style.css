@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,700;1,700&family=Play&display=swap');
+
+*{
+    font-family: 'Play', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #181818;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Bungee', cursive;
+    color: white;
+    font-family: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span{
+    color: white;
+}
+
+.ControleDeslizante{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta{
+	background-color: blueviolet;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.button-cta:hover{
+	background-color: transparent;
+	border: 2px solid blueviolet;
+	cursor: pointer;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid blueviolet;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.copy{
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+.container-password:hover .copy{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
